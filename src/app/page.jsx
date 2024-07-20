@@ -1,12 +1,32 @@
-import Navbar from "@/components/navbar";
+// import Navbar from "@/components/navbar";
 const Homepage = () => {
   return (
-    <>
-      <h1>hone</h1>
-      <h1>Nour</h1>
-      
-      <Navbar />
-    </>
+    <div className="h-full  flex flex-col lg:flex-row  md:flex-col px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48  ">
+      {/* image container */}
+      <div className="h-1/2 lg:h-full lg:w-1/2 relative z-40">
+        <img src="/hero.png" alt="" fill className="object-contain" />
+      </div>
+      {/* text container */}
+      <div className="h-1/2 lg:h-full lg:w-1/2  flex flex-col gap-8 items-center justify-center z-40">
+        <h1 className="text-4xl font-bold ">
+          Crafting Digital Experiences, Designing Tomorrow.
+        </h1>
+        <p>
+          I am a junior software developer with a passion for the MERN stack and
+          previous experience in front-end development. I am seeking
+          opportunities to enhance my skills and contribute to innovative
+          projects as a junior software developer.
+        </p>
+        <div className=" flex flex-center gap-8 rounded bg-red">
+          <button className="p-4 rounded-lg ring-black bg-black text-white">
+            View My Work
+          </button>
+          <button className="p-4 rounded-lg ring-black bg-black text-white">
+            Contact Me
+          </button>
+        </div>
+      </div>
+    </div>
   );
 };
 
