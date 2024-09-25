@@ -55,7 +55,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="h-full flex items-center justify-between px-4 sm:px8 md:px-12 lg:px-20 xl:px-48 text-xl">
+    <div className="h-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 text-xl">
       {/* links */}
       <div className="hidden md:flex gap-4 w-1/3  justify-center">
         {links.map((link) => (
@@ -68,6 +68,7 @@ const Navbar = () => {
           href="/"
           className="text-sm bg-black rounded-md p-1 font-semibold flex items-center justify-center"
         >
+          {/* my container  */}
           <span className="text-white">Hossam</span>
           <span className="w-15 h-8 rounded bg-white text-black mr-1 flex items-center justify-center">
             .dev
@@ -98,6 +99,7 @@ const Navbar = () => {
             setOpen((prev) => !prev);
           }}
         >
+          {/* lins to x */}
           <motion.div
             variants={topVariants}
             animate={open ? "opened" : "closed"}
