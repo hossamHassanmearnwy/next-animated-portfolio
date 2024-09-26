@@ -11,7 +11,7 @@ const NavLink = ({ link }) => {
       }`}
       href={link.url}
     >
-      {link.title}
+      <h1>{link.title}</h1>
     </Link>
   );
 };
