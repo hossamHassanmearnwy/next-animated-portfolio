@@ -1,7 +1,7 @@
 "use client";
 import { AnimatePresence, motion } from "framer-motion";
 import { usePathname } from "next/navigation";
-import { Navbar } from "./navbar";
+import Navbar from "./navbar";
 
 const TransitionPrividor = ({ children }) => {
   const pathname = usePathname();
@@ -17,6 +17,11 @@ const TransitionPrividor = ({ children }) => {
           exit={{ height: "140vh" }}
           transition={{ duration: 0.5, ease: "easeOut" }}
         />
+        <motion.div
+          className="h-screen w-screen fixed bg-black rounded-b-[100px] z-40"
+          initial={{ height: "140vh" }}
+          animate={{ height: "0vh",transtion: }}
+          
         <div className="w-screen h-screen bg-gradient-to-b from-blue-100 to-red-100 ">
           <div className="h-24">
             <Navbar />

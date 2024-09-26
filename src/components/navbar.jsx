@@ -15,6 +15,7 @@ const Navbar = () => {
   const topVariants = {
     closed: {
       rotate: 0,
+      Navbar,
     },
     opened: {
       rotate: 45,
