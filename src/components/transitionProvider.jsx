@@ -9,10 +9,10 @@ const TransitionPrividor = ({ children }) => {
     <AnimatePresence>
       <div
         key={pathname}
-        className="w-screen h-screen bg-gradient-to-b from-blue-100 to-red-100"
+        className=" w-screen h-screen bg-gradient-to-b from-blue-100 to-red-100"
       >
         <motion.div
-          className="h-screen w-screen fixed bg-black rounded-b-[100px] z-40"
+          className="w-screen h-screen  fixed bg-black rounded-b-[100px] z-40"
           animate={{ height: "0vh" }}
           exit={{ height: "140vh" }}
           transition={{ duration: 0.5, ease: "easeOut" }}
@@ -24,12 +24,14 @@ const TransitionPrividor = ({ children }) => {
           exit={{ opacity: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-        {pathname.substring(1)}</motion.div>
+          {pathname.substring(1)}
+        </motion.div>
         <motion.div
           className="h-screen w-screen fixed bg-black-500 rounded-t-[100px] bottom-0 z-40"
           initial={{ height: "140vh" }}
-          animate={{ height: "0vh",transtion:{delay:0.8} }}/>
-          
+          animate={{ height: "0vh", transtion: { delay: 0.8 } }}
+        />
+
         <div className="w-screen h-screen bg-gradient-to-b from-blue-100 to-red-100">
           <div className="h-24">
             <Navbar />

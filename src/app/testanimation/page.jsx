@@ -9,7 +9,7 @@ const Testanimation = () => {
         initail={{ x: -100 }}
         animate={{ x: 400, y: 300 }}
         transition={{ delay: 2, duration: 4 }}
-      ></motion.div> 
+      ></motion.div>
     </div>
   );
 };

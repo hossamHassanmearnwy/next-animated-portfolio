@@ -58,7 +58,7 @@ const Navbar = () => {
   return (
     <div className="h-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 text-xl">
       {/* links */}
-      <div className="hidden md:flex gap-4 w-1/3  justify-center">
+      <div className="hidden md:flex gap-4 w-1/3  ">
         {links.map((link) => (
           <NavLink link={link} key={link.title} />
         ))}
@@ -70,14 +70,14 @@ const Navbar = () => {
           className="text-sm bg-black rounded-md p-1 font-semibold flex items-center justify-center"
         >
           {/* my container  */}
-          <span className="text-white">Hossam</span>
-          <span className="w-15 h-8 rounded bg-white text-black mr-1 flex items-center justify-center">
+          <span className="text-white mr-1">Hossam</span>
+          <span className="w-12 h-8 rounded bg-white text-black  flex items-center justify-center">
             .dev
           </span>
         </Link>
       </div>
       {/* icons */}
-      <div className="hidden md:flex gap-4 w-1/3  justify-center">
+      <div className="hidden md:flex gap-4 w-1/3 justify-center ">
         <Link href="/">
           <Image src="/github.png" alt="" width={24} height={24} />
         </Link>

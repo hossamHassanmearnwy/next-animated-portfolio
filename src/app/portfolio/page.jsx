@@ -1,10 +1,14 @@
+"use client";
 import React from "react";
-
+import { motion } from "framer-motion";
 const Portfolio = () => {
   return (
-    <div>
-      <h1>Portfolio</h1>
-    </div>
+    <motion.div
+      className="h-full"
+      initial={{ y: "-200vh" }}
+      animate={{ y: "0%" }}
+      transition={{ duration: 1 }}
+    ></motion.div>
   );
 };
 

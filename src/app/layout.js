@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <TransitionPrividor>{children}</TransitionPrividor>
+        <TransitionPrividor >{children}</TransitionPrividor>
       </body>
     </html>
   );
